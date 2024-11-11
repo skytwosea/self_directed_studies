@@ -1,0 +1,122 @@
+nmichaels@gmail.com
+1 Dec 2023, 16:48
+Re: On proofreading
+
+Well that explains some things. I was going to ask how far along you
+were in school with this message, but that's not even in the ballpark
+of what I was expecting. It's hard to fault you for choosing the
+money-positive approach instead of the expensive one. I actually got
+most of my CS education after graduating, but my major was more
+computer-adjacent (electrical engineering) and I've been writing
+software for pretty much my whole career. Mentorship from some really
+skilled engineers helped me a lot. That, and reading. I strongly
+recommend jobs where you can get code reviews from experienced
+engineers though.
+
+I'm curious where you started the graduate CS studies. I have a friend
+who had the opposite experience. He decided to try to get a master's
+in CS after spending around 10 years as an electrical engineer, and
+now he's close to finishing a PhD.
+
+As for your curriculum...
+
+I think I've actually read through SICP. It may have been the first
+time I really seriously tried to learn a functional language. I still
+have a copy of The Algorithm Design Manual by Steven Skiena. I've
+found it pretty helpful for understanding algorithms and data
+structures. This probably won't make you understand closures, but I
+thought of it when you said you were avoiding them:
+https://people.csail.mit.edu/gregs/ll1-discuss-archive-html/msg03277.html
+
+Computer architecture seems like a pretty advanced topic to put
+second. Is your list in order? Maybe I'm thinking of something else,
+but the computer architecture class I took in college was aimed at
+seniors and covered things like how to design a CPU and communications
+between processors in a multi-processor environment.
+
+Math for CS is basically just linear algebra. If you have a science
+background, you probably already know all the stats and probability
+things better than most ML people. Anyway, discrete math isn't
+particularly hard and it is on CS curricula, so it might be worth
+keeping. Just know that it will likely go unused in the workplace.
+
+As for the last few things, you probably won't really need to be able
+to do web development and mobile development and work with distributed
+systems at the same time. If it's just for the sake of education,
+cool, but it's unlikely those will come up in the same job. Well,
+maybe if you focus on front-end, you'll use the web and mobile bits.
+It is probably worth learning about TCP sockets and looking at some
+HTTP traffic though. That stuff can come in handy.
+
+I'd be careful about networks. In the EE world, networks classes are
+very signal processing intensive. Some CS departments are not far
+removed from their electrical roots, so if you start doing fourier
+transforms, you're probably going down the wrong path.
+
+One thing that I think is pretty important but missing from your list
+is software engineering. Things like design patterns and the theory
+behind designing good interfaces. This is an area where I think most
+schools do a bad job of preparing students. For example, I managed to
+get a good 3 years into my career before I really understood what
+header files were for. I still spend a lot of time in code reviews
+asking if something in a header really belongs there. Unfortunately I
+don't have good book recommendations. This description looks like a
+good fit, though:
+https://ocw.mit.edu/courses/6-005-software-construction-spring-2016/
+
+You said you wanted to work in embedded and systems programming.
+They're different (but I guess related) things. I managed to do
+embedded work from home during lockdown, but I had my own logic
+analyzer, oscilloscope, DC supply, soldering station, and multimeter.
+We shipped boards around, and I ended up with a very messy desk. I
+guess what I'm getting at is that embedded work involves having
+hardware to play with. It can be done remotely, but it's more work.
+More importantly, there are some subjects you left off your list that
+I've been asked about in interviews for embedded jobs: basic circuits
+and digital logic. You don't need to be able to design an op amp, but
+you should be able to recognize an LED on a schematic and tell how it
+turns on. I'd recommend something like MIT's open courseware
+6.004/6.111 and 6.002. The big danger here, though, is that you get
+addicted to VHDL and end up wanting to design processors for a living.
+It's super fun having hardware that runs your algorithm with no
+software in the middle. ASICs are too expensive for hobby projects,
+though.
+
+For systems programming, on the other hand, you want to spend more
+time in operating systems and filesystems. Maybe you're including some
+grad courses when you mention operating systems, you'll want to if you
+aren't. Of course, there are plenty of opportunities to contribute to
+real open source projects here. Linux and FreeBSD can both use
+developers with free nights and weekends, and "commit privileges to
+FreeBSD" looks amazing on a resume, but it's a lot of work to get
+involved. There's also the intersection; Zephyr can always use more
+drivers.
+
+I like embedded work because it's possible for me to really understand
+everything the chip is doing. Once you put an operating system on
+there with a network stack, a fancy filesystem, and a kernel with
+millions of lines of code, you never really know what's going on.
+
+2 years is an aggressive timeline for that much learning, but it seems
+doable if you're motivated enough. At the same time, 2 more years
+doing junior developer work will probably qualify you for most
+development jobs that involve the tools you're using. I know from
+personal experience that data scientists need people who can wrangle
+databases and write code (see data engineering) badly, and if you get
+familiar with pandas and SQL you can get a job doing that for pretty
+good money. It's nowhere near embedded or systems, but it's still
+making computers do work for you, which I find very rewarding. I do
+think you'll have a leg up on the new college grads, since you have
+real life workplace experience.
+
+And for the original reason I started writing this message, I updated
+https://www.nmichaels.org/zig/memory.html with your feedback in mind.
+I hope I addressed your comments. The bit with the pictures has extra
+verbage to talk about what the allocator's doing, as does the section
+titled "A Tangent." Plus, I drew some very bad art. Here's hoping it's
+a net positive. By the way, do you mind if I mention you by name in an
+acknowledgement at the end? Is there a page you'd like me to link to?
+I really appreciate your help, and it feels dishonest to only have my
+name on this.
+
+~Nathan
